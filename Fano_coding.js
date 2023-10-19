@@ -51,19 +51,19 @@ alphabet3={
     g:0.08,
     h:0.13,
     i:0.08,
-    j:0.16,
+    j:0.06,
     k:0.12
 }
 
 
-
+console.log("Фано")
+calcL(alphabet3)
+calcH(alphabet3)
 
 decode(encode("aaa",alphabet3),alphabet3)
 //  decode(encode("abcd",alphabet2),alphabet2)
 
 
-calcL(alphabet3)
-calcH(alphabet3)
 
 
 function encode(string, alphabet){
@@ -143,7 +143,7 @@ function divideAndGetCode(array){
         array[1].binValue+="0"
         return array
     }else if (array.length===1){
-        array[0].binValue+="1"
+        //array[0].binValue+="1"
         return array
 
     }else{
